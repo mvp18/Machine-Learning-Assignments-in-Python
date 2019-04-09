@@ -1,4 +1,4 @@
-# execute as python3 Concept_learning.py
+# execute as python3 Concept_learning.py data1.csv
 
 import sys
 
