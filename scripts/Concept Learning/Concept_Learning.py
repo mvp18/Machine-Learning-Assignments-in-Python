@@ -1,8 +1,12 @@
+# execute as python3 Concept_learning.py
+
 import sys
+
 train_file=sys.argv[1]
 file = open(train_file,'r')
 list_of_attributes=[]
 target_value=[]
+
 for line in file:
     attributes=[]
     for k in range(0,len(line)-2,2):
@@ -10,6 +14,7 @@ for line in file:
     target_value.append(line[k+2])
     list_of_attributes.append(attributes)
 file.close()
+
 # Initialize with most specific hypothesis
 literals_space=[]
 for k in range(len(list_of_attributes)):
@@ -25,6 +30,7 @@ for k in range(len(list_of_attributes)):
         break
     else:
         pass
+
 for j in range(train_example_number,len(list_of_attributes)):
     if target_value[j]=='1':
         for m in range(len(attributes)):
@@ -34,4 +40,5 @@ for j in range(train_example_number,len(list_of_attributes)):
                 literal_check=-m-1
             if (literal_check*(-1)) in literals_space:
                 literals_space.remove(literal_check*(-1))
+
 print(len(literals_space), *literals_space, sep = ", ")

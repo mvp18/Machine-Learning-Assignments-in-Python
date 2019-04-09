@@ -1,7 +1,4 @@
-# Roll 16EE10056
-# Name Soumava Paul
-# Assignment 2
-# Execute as 'python3 16EE10056_2.py'
+# Execute as 'python3 DecisionTrees.py'
 # Uncomment last line of code to see structure of decision tree in preorder format                       
 
 import numpy as np
@@ -109,7 +106,7 @@ def write_predictions(test_instance, decision_tree, file):
 		write_predictions(test_instance, decision_tree.right_child, file)
 
 def generate_outfile(test_data, decision_tree):
-	outfile = open('16EE10056_2.out', 'w')
+	outfile = open('DecisionTrees.out', 'w')
 	for i in range(test_data.shape[0]):
 		write_predictions(test_data[i], decision_tree, outfile)
 	outfile.close()    

@@ -1,7 +1,4 @@
-# Roll 16EE10056
-# Name Soumava Paul
-# Assignment 3
-# Execute as 'python3 16EE10056_3.py'
+# Execute as 'python3 NaiveBayes.py'
 
 import numpy as np
 
@@ -31,7 +28,7 @@ def calculate_class_posteriors(feature_vector):
     return posterior_prob_class_0, posterior_prob_class_1
 
 def classify_test_vector(test_data):
-    outfile = open('16EE10056_3.out','w')
+    outfile = open('NaiveBayes.out','w')
     for test_vector in test_data:
         posterior_prob_class_0, posterior_prob_class_1 = calculate_class_posteriors(test_vector)
         if posterior_prob_class_0 > posterior_prob_class_1:

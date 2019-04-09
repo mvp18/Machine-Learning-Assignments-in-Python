@@ -1,3 +1,6 @@
+# Execute as 'python3 kmeans.py'
+# This script is for comparison between sklearn and my implementation
+
 from sklearn.cluster import KMeans
 import numpy as np
 

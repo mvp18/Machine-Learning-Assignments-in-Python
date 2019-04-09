@@ -1,7 +1,4 @@
-# Roll 16EE10056
-# Name Soumava Paul
-# Assignment 4
-# Execute as 'python3 16EE10056_4.py'
+# Execute as 'python3 KNN.py'
 
 import numpy as np
 
@@ -23,7 +20,7 @@ def find_5_nearest_neighbours(train_data, test_array):
     return five_nearest_neighbours
 
 def find_dominant_class_and_classify(test_data, train_data):
-    outfile = open('16EE10056_4.out','w')
+    outfile = open('KNN.out','w')
     for k in range(test_data.shape[0]):
         nearest_neighbours = find_5_nearest_neighbours(train_data, test_data[k])
         classes = np.zeros(nearest_neighbours.shape[0])

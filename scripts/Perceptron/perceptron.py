@@ -1,7 +1,4 @@
-# Roll 16EE10056
-# Name Soumava Paul
-# Assignment 6
-# Execute as 'python3 16EE10056_6.py'
+# Execute as 'python3 perceptron.py'
 
 import numpy as np
 
@@ -65,7 +62,7 @@ perceptron.train(X_train, y_train, 0.1, 10)
 
 # print('Weights after training : ', perceptron.weights)
 
-outfile = open('16EE10056_6.out','w')
+outfile = open('perceptron.out','w')
 for X in X_test:
     test_label = np.round(perceptron.forward_propagation(X))
     # print(test_label)

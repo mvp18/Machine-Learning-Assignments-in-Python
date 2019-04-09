@@ -1,7 +1,4 @@
-# Roll 16EE10056
-# Name Soumava Paul
-# Assignment 7
-# Execute as 'python3 16EE10056_7.py'
+# Execute as 'python3 kmeans_clustering.py'
 
 import numpy as np
 
@@ -116,7 +113,7 @@ cluster1_final = new_cluster1_indices
 
 cluster2_final = new_cluster2_indices
 
-outfile = open('16EE10056_7.out','w')
+outfile = open('kmeans_clustering.out','w')
 for i in range(dataset.shape[0]):
 	if i in cluster1_final:
 		outfile.write('1 ')
